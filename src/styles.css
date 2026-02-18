@@ -1,7 +1,7 @@
 :root{
-    --yellow-theme1: rgb(241, 121, 22);
-    --yellow-theme2: rgb(248, 203, 54);
-    --orange-theme2:
+    --orange-theme1: rgb(241, 121, 22);
+    --yellow-theme1: rgb(236, 207, 111);
+    --yellow-theme2: rgb(255, 230, 0);
 }
 
 
@@ -20,6 +20,8 @@ body{
     -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    /* align-items: center; */
 }
 
 img, picture, video, canvas, svg{
@@ -47,13 +49,8 @@ h1, h2, h3, h4, h5, h6{
 
 /* Nav-Bar */
 
-/* header{
-    
-
-} */
-
 #navbar{
-    background: var(--yellow-theme2);
+    background: var(--yellow-theme1);
     display: flex;
     justify-content: center;
     padding: 10px 10px 0px 10px;
@@ -63,7 +60,7 @@ h1, h2, h3, h4, h5, h6{
     /* font-family: ; */
     font-size: 1.4rem;
     font-weight: 800;
-    background: var(--yellow-theme1);
+    background: var(--orange-theme1);
     padding: 10px 20px;
     margin: 15px 5px 0px 5px;
     border-radius: 10px 10px 0 0;
@@ -72,4 +69,41 @@ h1, h2, h3, h4, h5, h6{
 
 .tabBtns:hover{
     background-color: rgb(34, 185, 59);
+}
+
+
+/* Main Page */
+
+#wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+    background: var(--yellow-theme2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 90%;
+}
+
+#content > div{
+    border: 5px orange solid;
+}
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: green;
+    text-align: center;
 }
