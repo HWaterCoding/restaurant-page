@@ -22,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /* a background image */
+    
 }
 
 img, picture, video, canvas, svg{
@@ -78,7 +78,10 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* a background image */
+    background-image: url(images/lion-king-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -87,7 +90,8 @@ h1, h2, h3, h4, h5, h6{
 /* Main Page-Load Tab */
 
 #homepage{
-    background: var(--light-yellow-theme);
+    /* background: var(--light-yellow-theme); */
+    background-color: rgba(235, 235, 47, 0.575);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,6 +120,7 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    padding: 0;
     list-style-type: none;
 }
 
