@@ -1,7 +1,8 @@
 :root{
-    --orange-theme1: rgb(241, 121, 22);
-    --yellow-theme1: rgb(236, 207, 111);
-    --yellow-theme2: rgb(255, 230, 0);
+    --orange-theme: rgb(241, 121, 22);
+    --dark-yellow-theme: rgb(255, 198, 11);
+    --light-yellow-theme: rgb(248, 232, 85);
+    --brown-theme: #8a4900;
 }
 
 
@@ -21,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /* align-items: center; */
+    /* a background image */
 }
 
 img, picture, video, canvas, svg{
@@ -50,7 +51,7 @@ h1, h2, h3, h4, h5, h6{
 /* Nav-Bar */
 
 #navbar{
-    background: var(--yellow-theme1);
+    background: var(--dark-yellow-theme);
     display: flex;
     justify-content: center;
     padding: 10px 10px 0px 10px;
@@ -60,7 +61,7 @@ h1, h2, h3, h4, h5, h6{
     /* font-family: ; */
     font-size: 1.4rem;
     font-weight: 800;
-    background: var(--orange-theme1);
+    background: var(--orange-theme);
     padding: 10px 20px;
     margin: 15px 5px 0px 5px;
     border-radius: 10px 10px 0 0;
@@ -68,33 +69,76 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .tabBtns:hover{
-    background-color: rgb(34, 185, 59);
+    background: var(--dark-yellow-theme);
 }
 
-
-/* Main Page */
-
-#wrapper{
+#content{
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* a background image */
 }
 
-#content{
-    background: var(--yellow-theme2);
+
+
+
+/* Main Page-Load Tab */
+
+#homepage{
+    background: var(--light-yellow-theme);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    /* 60/40 */
     width: 60%;
     height: 90%;
+    border-radius: 35px;
 }
 
-#content > div{
-    border: 5px orange solid;
+#homepage > div{
+    background: var(--dark-yellow-theme);
+    border: 12px var(--brown-theme) solid;
+    width: 65%;
+    padding: 20px;
+
 }
+
+#title{
+    text-align: center;
+    border-radius: 50px;
+}
+
+#hours ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#location p{
+    text-align: center;
+}
+
+
+
+/* Menu Page Tab */
+
+
+
+
+
+
+
+
+/* About Page Tab */
+
+
+
+
 
 
 
@@ -104,6 +148,7 @@ h1, h2, h3, h4, h5, h6{
 /* Footer */
 
 footer{
-    background-color: green;
+    background: var(--dark-yellow-theme);
     text-align: center;
+    padding: 10px;
 }
