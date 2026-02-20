@@ -25,3 +25,15 @@ const aboutBtn = document.getElementById("aboutBtn");
 aboutBtn.addEventListener("click", ()=>{
 
 });
+
+
+
+
+
+
+
+
+//To:do ---
+//Hard-code the menu and about sections
+//YOu can re-use the yellow background area ("#homepage") 
+//Comment out other code for now
