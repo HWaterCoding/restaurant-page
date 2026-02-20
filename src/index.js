@@ -21,8 +21,8 @@ menuBtn.addEventListener("click", ()=>{
 
 });
 
-const aboutBtn = document.getElementById("aboutBtn");
-aboutBtn.addEventListener("click", ()=>{
+const contactBtn = document.getElementById("contactBtn");
+contactBtn.addEventListener("click", ()=>{
 
 });
 
