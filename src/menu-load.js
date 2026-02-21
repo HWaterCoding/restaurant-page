@@ -3,13 +3,14 @@ export function menuLoad(){
     const contentDiv = document.getElementById("content");
     const menuDiv = document.createElement("div");
     menuDiv.id = "menu";
-
     contentDiv.appendChild(menuDiv);
-
+    
     const menuTitle = document.createElement("h1");
     menuTitle.textContent = "Menu";
     menuDiv.appendChild(menuTitle);
 
+
+    //Drinks menu:
     const drinksTitle = document.createElement("h2");
     drinksTitle.textContent = "Drinks";
     menuDiv.appendChild(drinksTitle);
@@ -69,4 +70,59 @@ export function menuLoad(){
     drink4picture.classList.add("itemPicture");
     drink4.classList.add("menuItems");
     menuDiv.appendChild(drink4);
+
+
+
+    //Appetizers Menu:
+    const appsTitle = document.createElement("h2");
+    appsTitle.textContent = "Appetizers";
+    menuDiv.appendChild(appsTitle);
+
+    const apps1 = document.createElement("div");
+    const apps1title = document.createElement("h2");
+    const apps1desc = document.createElement("p");
+    const apps1price = document.createElement("h4");
+    const apps1picture = document.createElement("div");
+    apps1title.textContent = "Zebra Tartare";
+    apps1desc.textContent = "A bistro classic. Composed of finely chopped or minced raw, high-quality Zebra meat mixed with capers, shallots, Worcestershire sauce, and Dijon mustard.";
+    apps1price.textContent = "$12";
+    //insert image here too
+    apps1.append(apps1title, apps1desc, apps1price, apps1picture);
+    apps1picture.classList.add("itemPicture");
+    apps1.classList.add("menuItems");
+    menuDiv.appendChild(apps1);
+
+    const apps2 = document.createElement("div");
+    const apps2title = document.createElement("h2");
+    const apps2desc = document.createElement("p");
+    const apps2price = document.createElement("h4");
+    const apps2picture = document.createElement("div");
+    apps2title.textContent = "Deviled Echinda Eggs";
+    apps2desc.textContent = "A classic, cold appetizer made from hard-boiled eggs that are peeled, halved, and stuffed with a creamy, savory yolk mixture made from Echinda eggs, mayonnaise, mustard, vinegar, and smoked paprika.";
+    apps2price.textContent = "$8";
+    //insert image here too
+    apps2.append(apps2title, apps2desc, apps2price, apps2picture);
+    apps2picture.classList.add("itemPicture");
+    apps2.classList.add("menuItems");
+    menuDiv.appendChild(apps2);
+
+    const apps3 = document.createElement("div");
+    const apps3title = document.createElement("h2");
+    const apps3desc = document.createElement("p");
+    const apps3price = document.createElement("h4");
+    const apps3picture = document.createElement("div");
+    apps3title.textContent = "Camel Cheese Sticks";        
+    apps3desc.textContent = "Our version of Mozzarella sticks, except with Camels cheese. Breaded and fried to perfection.";
+    apps3price.textContent = "$9";
+    //insert image here too
+    apps3.append(apps3title, apps3desc, apps3price, apps3picture);
+    apps3picture.classList.add("itemPicture");
+    apps3.classList.add("menuItems");
+    menuDiv.appendChild(apps3);
+
+
+
+    //Main Courses Menu:
+    
+
 }
