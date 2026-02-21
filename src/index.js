@@ -29,13 +29,17 @@ homeBtn.addEventListener("click", ()=>{
     pageLoad();
 });
 
-
-
 const menuBtn = document.getElementById("menuBtn");
-menuBtn.addEventListener("click", menuLoad);
+menuBtn.addEventListener("click", () =>{
+    contentDiv.innerHTML = "";    
+    menuLoad();
+});
 
 const contactBtn = document.getElementById("contactBtn");
-contactBtn.addEventListener("click", contactLoad);
+contactBtn.addEventListener("click", () =>{
+    contentDiv.innerHTML = "";
+    contactLoad();
+});
 
 
 
