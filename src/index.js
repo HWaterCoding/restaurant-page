@@ -1,4 +1,6 @@
 console.log("Test")
+//Import CSS
+import "./styles.css";
 
 //initial import of pageLoad function and call immediately.
 import { pageLoad } from "./homepage-load.js";
@@ -18,8 +20,14 @@ import { contactLoad } from "./contact-load.js";
 //When one button is clicked it will wipe out the content current on the page and then
 //it will run the corresponding tab module to replace the content with what was clicked.
 
+
+const contentDiv = document.getElementById("content");
+
 const homeBtn = document.getElementById("homeBtn");
-homeBtn.addEventListener("click", pageLoad);
+homeBtn.addEventListener("click", ()=>{
+    contentDiv.innerHTML = "";
+    pageLoad();
+});
 
 
 
