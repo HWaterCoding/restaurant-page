@@ -1,4 +1,10 @@
 //This file will contain the menu-page load function
+
+
+//Inject images into this file!
+
+
+
 export function menuLoad(){
     const contentDiv = document.getElementById("content");
     const menuDiv = document.createElement("div");

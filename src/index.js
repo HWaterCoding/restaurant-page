@@ -30,14 +30,12 @@ contactBtn.addEventListener("click", () =>{
 });
 
 
+
+
 //to-do:
-//Change some of the menu items to reflect "saloon" better. A saloon is a bar.
-//Write the menu-load function
-//Trouble shoot any errors that are in the console (404)
-//Make the menu, specifically the content div resizeable
-
-
 //Fixes:
+//Make both the navBar and the footer stay on the page when scrolling
 //Apply actual image elements to the menu and re-format them to fit nicely in their container
-//Fix the background image on the body to not stretch when menu tab is open
+//Make the menu, specifically the content div responsive
 
+//Trouble shoot any errors that are in the console (404)
