@@ -123,6 +123,64 @@ export function menuLoad(){
 
 
     //Main Courses Menu:
-    
 
+    const mainsTitle = document.createElement("h2");
+    mainsTitle.textContent = "Main Courses";
+    menuDiv.appendChild(mainsTitle);
+
+    const mains1 = document.createElement("div");
+    const mains1title = document.createElement("h2");
+    const mains1desc = document.createElement("p");
+    const mains1price = document.createElement("h4");
+    const mains1picture = document.createElement("div");
+    mains1title.textContent = "Wildebeest Parmasean";     
+    mains1desc.textContent = "A delicious comfort dish featuring breaded, pan-fried Wildebeest breasts topped with marinara sauce and melted Camel's cheese and Parmesan cheese.";
+    mains1price.textContent = "$24";
+    //insert image here too
+    mains1.append(mains1title, mains1desc, mains1price, mains1picture);
+    mains1picture.classList.add("itemPicture");
+    mains1.classList.add("menuItems");
+    menuDiv.appendChild(mains1);
+
+    const mains2 = document.createElement("div");
+    const mains2title = document.createElement("h2");
+    const mains2desc = document.createElement("p");
+    const mains2price = document.createElement("h4");
+    const mains2picture = document.createElement("div");
+    mains2title.textContent = "Antelope Alfredo";   
+    mains2desc.textContent = "Tender, pan-seared Antelope sliced over fettuccine pasta, tossed in a rich, velvety sauce made from butter, heavy cream, and Parmesan cheese.";
+    mains2price.textContent = "$22";
+    //insert image here too
+    mains2.append(mains2title, mains2desc, mains2price, mains2picture);
+    mains2picture.classList.add("itemPicture");
+    mains2.classList.add("menuItems");
+    menuDiv.appendChild(mains2);
+
+    const mains3 = document.createElement("div");
+    const mains3title = document.createElement("h2");
+    const mains3desc = document.createElement("p");
+    const mains3price = document.createElement("h4");
+    const mains3picture = document.createElement("div");
+    mains3title.textContent = "Buffalo Tacos";   
+    mains3desc.textContent = "Mouth-watering seared Buffalo meat on a corn tortilla paired with vegetables of your choosing and cheese.";
+    mains3price.textContent = "$26";
+    //insert image here too
+    mains3.append(mains3title, mains3desc, mains3price, mains3picture);
+    mains3picture.classList.add("itemPicture");
+    mains3.classList.add("menuItems");
+    menuDiv.appendChild(mains3);
+
+    const mains4 = document.createElement("div");
+    const mains4title = document.createElement("h2");
+    const mains4desc = document.createElement("p");
+    const mains4price = document.createElement("h4");
+    const mains4picture = document.createElement("div");
+    mains4title.textContent = "A whole hyena's face.";   
+    mains4desc.textContent = "They took my dad, I take their faces.";
+    mains4price.textContent = "Priceless.";
+    //insert image here too
+    mains4.append(mains4title, mains4desc, mains4price, mains4picture);
+    mains4picture.classList.add("itemPicture");
+    mains4.classList.add("menuItems");
+    menuDiv.appendChild(mains4);
 }

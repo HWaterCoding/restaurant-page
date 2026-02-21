@@ -36,3 +36,8 @@ contactBtn.addEventListener("click", () =>{
 //Trouble shoot any errors that are in the console (404)
 //Make the menu, specifically the content div resizeable
 
+
+//Fixes:
+//Apply actual image elements to the menu and re-format them to fit nicely in their container
+//Fix the background image on the body to not stretch when menu tab is open
+
