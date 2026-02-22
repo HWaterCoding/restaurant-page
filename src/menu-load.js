@@ -17,6 +17,7 @@ export function menuLoad(){
 
 
     //Drinks menu:
+    
     const drinksTitle = document.createElement("h2");
     drinksTitle.textContent = "Drinks";
     menuDiv.appendChild(drinksTitle);
@@ -80,6 +81,7 @@ export function menuLoad(){
 
 
     //Appetizers Menu:
+
     const appsTitle = document.createElement("h2");
     appsTitle.textContent = "Appetizers";
     menuDiv.appendChild(appsTitle);

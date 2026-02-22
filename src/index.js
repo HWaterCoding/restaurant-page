@@ -34,8 +34,6 @@ contactBtn.addEventListener("click", () =>{
 
 //to-do:
 //Fixes:
-//Make both the navBar and the footer stay on the page when scrolling
 //Apply actual image elements to the menu and re-format them to fit nicely in their container
 //Make the menu, specifically the content div responsive
-
 //Trouble shoot any errors that are in the console (404)

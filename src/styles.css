@@ -3,30 +3,17 @@
     --dark-yellow-theme: rgb(255, 198, 11);
     --light-yellow-theme: rgb(248, 232, 85);
     --brown-theme: #8a4900;
+    --content-background: rgba(235, 235, 47, 0.575);
 }
 
-
-
 /* Default Stylings */
+
 *, *::before, *::after{
     box-sizing: border-box;
 }
 
 *{
     margin: 0;
-}
-
-body{
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-image: url(./images/lion-king-background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    
 }
 
 img, picture, video, canvas, svg{
@@ -52,7 +39,27 @@ h1, h2, h3, h4, h5, h6{
 
 
 
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(./images/lion-king-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
 /* Nav-Bar */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
 #navbar{
     background: var(--dark-yellow-theme);
@@ -81,7 +88,8 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-y: auto;
 }
 
 
@@ -90,8 +98,7 @@ h1, h2, h3, h4, h5, h6{
 /* Main Page-Load Tab */
 
 #homepage{
-    /* background: var(--light-yellow-theme); */
-    background-color: rgba(235, 235, 47, 0.575);
+    background: var(--content-background);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,6 +107,15 @@ h1, h2, h3, h4, h5, h6{
     width: 60%;
     height: 90%;
     border-radius: 35px;
+    margin: 60px 0px;
+}
+
+#homepage h1{
+    border: 12px var(--brown-theme) solid;
+    background: var(--dark-yellow-theme);
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-top: 10px;
 }
 
 #homepage > div{
@@ -134,7 +150,7 @@ h1, h2, h3, h4, h5, h6{
 /* Menu Page Tab */
 
 #menu{
-    background-color: rgba(235, 235, 47, 0.575);
+    background: var(--content-background);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,11 +159,12 @@ h1, h2, h3, h4, h5, h6{
     /* 60/40 */
     width: 60%;
     border-radius: 35px;
-    margin: 50px 0px;
+    margin: 60px 0px;
 }
 
 #menu h1{
     border: 12px var(--brown-theme) solid;
+    background: var(--dark-yellow-theme);
     border-radius: 50px;
     padding: 10px 30px;
     margin-top: 10px;
@@ -155,8 +172,9 @@ h1, h2, h3, h4, h5, h6{
 
 .menuItems{
     padding: 20px;
-    border: 5px green solid;
     width: 60%;
+    background: var(--dark-yellow-theme);
+    border: 12px var(--brown-theme) solid;
 }
 
 .itemPicture{
@@ -171,8 +189,7 @@ h1, h2, h3, h4, h5, h6{
 /* Contact Page Tab */
 
 #contact{
-    /* background: var(--light-yellow-theme); */
-    background-color: rgba(235, 235, 47, 0.575);
+    background: var(--content-background);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,17 +198,19 @@ h1, h2, h3, h4, h5, h6{
     width: 60%;
     height: 90%; 
     border-radius: 35px;
+    margin: 60px 0px;
 }
 
 #contact div{
     background: var(--dark-yellow-theme);
     border: 12px var(--brown-theme) solid;
-    width: 65%;
+    width: 60%;
     padding: 20px;
 }
 
 #contact h1{
-    border: 8px var(--brown-theme) solid;
+    background: var(--dark-yellow-theme);
+    border: 12px var(--brown-theme) solid;
     text-align: center;
     border-radius: 50px;
     padding: 10px 30px;

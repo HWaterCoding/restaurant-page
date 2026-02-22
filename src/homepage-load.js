@@ -5,11 +5,8 @@ export function pageLoad(){
 
     contentDiv.appendChild(homepageDiv);
 
-    const titleDiv = document.createElement("div");
     const titleh1 = document.createElement("h1");
-
-    homepageDiv.appendChild(titleDiv);
-    titleDiv.appendChild(titleh1);
+    homepageDiv.appendChild(titleh1);
 
     //Create and append introduction DOM
     const introductionDiv = document.createElement("div");
@@ -69,7 +66,6 @@ export function pageLoad(){
 
     //Apply ID's for styling
     homepageDiv.id = "homepage";
-    titleDiv.id = "title";
     introductionDiv.id = "introduction";
     hoursDiv.id = "hours";
     locationDiv.id = "location";
