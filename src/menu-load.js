@@ -19,6 +19,7 @@ import buffaloTacosImg from "./images/mains/buffalo-tacos.jpg";
 import hyenaFaceImg from "./images/mains/hyena-face.jpg";
 
 export function menuLoad(){
+    
     const contentDiv = document.getElementById("content");
     const menuDiv = document.createElement("div");
     menuDiv.id = "menu";
@@ -36,7 +37,7 @@ export function menuLoad(){
     
     //Drink 1:
     const drink1 = document.createElement("div");
-    const drink1title = document.createElement("h2");
+    const drink1title = document.createElement("h3");
     drink1title.textContent = "Water";
     const drink1desc = document.createElement("p");
     drink1desc.textContent = "...It's water...";
@@ -54,7 +55,7 @@ export function menuLoad(){
 
     //Drink2:
     const drink2 = document.createElement("div");
-    const drink2title = document.createElement("h2");
+    const drink2title = document.createElement("h3");
     drink2title.textContent = "Milk";
     const drink2desc = document.createElement("p");
     drink2desc.textContent = "An essential drink for any feline. High in calcium and a smooth, creamy texture. Very refreshing on a hot summer day or with spicy food.";
@@ -72,7 +73,7 @@ export function menuLoad(){
 
     //Drink3:
     const drink3 = document.createElement("div");
-    const drink3title = document.createElement("h2");
+    const drink3title = document.createElement("h3");
     drink3title.textContent = "Baobab Juice";
     const drink3desc = document.createElement("p");
     drink3desc.textContent = "Hand-squeezed by Rafiki himself, and directly applied to your face, usually smeared across your forehead as part of one of his weird rituals. Not sure why he does that...";
@@ -90,7 +91,7 @@ export function menuLoad(){
 
     //Drink4:
     const drink4 = document.createElement("div");
-    const drink4title = document.createElement("h2");
+    const drink4title = document.createElement("h3");
     drink4title.textContent = "Whiskey";
     const drink4desc = document.createElement("p");
     drink4desc.textContent = "Aged 20 years, top of the line.";
@@ -116,7 +117,7 @@ export function menuLoad(){
 
     //Appetizer 1:
     const apps1 = document.createElement("div");
-    const apps1title = document.createElement("h2");
+    const apps1title = document.createElement("h3");
     apps1title.textContent = "Zebra Tartare";
     const apps1desc = document.createElement("p");
     apps1desc.textContent = "A bistro classic. Composed of finely chopped or minced raw, high-quality Zebra meat mixed with capers, shallots, Worcestershire sauce, and Dijon mustard.";
@@ -134,7 +135,7 @@ export function menuLoad(){
 
     //Appetizer 2:
     const apps2 = document.createElement("div");
-    const apps2title = document.createElement("h2");
+    const apps2title = document.createElement("h3");
     apps2title.textContent = "Deviled Echinda Eggs";
     const apps2desc = document.createElement("p");
     apps2desc.textContent = "A classic, cold appetizer made from hard-boiled eggs that are peeled, halved, and stuffed with a creamy, savory yolk mixture made from Echinda eggs, mayonnaise, mustard, vinegar, and smoked paprika.";
@@ -152,7 +153,7 @@ export function menuLoad(){
 
     //Appetizer 3:
     const apps3 = document.createElement("div");
-    const apps3title = document.createElement("h2");
+    const apps3title = document.createElement("h3");
     apps3title.textContent = "Camel Cheese Sticks";        
     const apps3desc = document.createElement("p");
     apps3desc.textContent = "Our version of Mozzarella sticks, except with Camels cheese. Breaded and fried to perfection.";
@@ -178,7 +179,7 @@ export function menuLoad(){
 
     //Main Course 1:
     const mains1 = document.createElement("div");
-    const mains1title = document.createElement("h2");
+    const mains1title = document.createElement("h3");
     mains1title.textContent = "Wildebeest Parmasean";     
     const mains1desc = document.createElement("p");
     mains1desc.textContent = "A delicious comfort dish featuring breaded, pan-fried Wildebeest breasts topped with marinara sauce and melted Camel's cheese and Parmesan cheese.";
@@ -196,7 +197,7 @@ export function menuLoad(){
 
     //Main Course 2:
     const mains2 = document.createElement("div");
-    const mains2title = document.createElement("h2");
+    const mains2title = document.createElement("h3");
     mains2title.textContent = "Antelope Alfredo";   
     const mains2desc = document.createElement("p");
     mains2desc.textContent = "Tender, pan-seared Antelope sliced over fettuccine pasta, tossed in a rich, velvety sauce made from butter, heavy cream, and Parmesan cheese.";
@@ -214,7 +215,7 @@ export function menuLoad(){
 
     //Main Course 3:
     const mains3 = document.createElement("div");
-    const mains3title = document.createElement("h2");
+    const mains3title = document.createElement("h3");
     mains3title.textContent = "Buffalo Tacos";   
     const mains3desc = document.createElement("p");
     mains3desc.textContent = "Mouth-watering seared Buffalo meat on a corn tortilla paired with vegetables of your choosing and cheese.";
@@ -232,7 +233,7 @@ export function menuLoad(){
 
     //Main Course 4:
     const mains4 = document.createElement("div");
-    const mains4title = document.createElement("h2");
+    const mains4title = document.createElement("h3");
     mains4title.textContent = "A whole hyena's face.";   
     const mains4desc = document.createElement("p");
     mains4desc.textContent = "They took my dad, I take their faces.";

@@ -34,6 +34,5 @@ contactBtn.addEventListener("click", () =>{
 
 //to-do:
 //Fixes:
-//Apply actual image elements to the menu and re-format them to fit nicely in their container
+//Import fonts and add them to the text on the pages.
 //Make the menu, specifically the content div responsive
-//Trouble shoot any errors that are in the console (404)
