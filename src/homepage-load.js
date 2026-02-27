@@ -1,8 +1,9 @@
 //This file will contain the initial page-load function of the homepage
 export function pageLoad(){
-    const contentDiv = document.getElementById("content");
-    const homepageDiv = document.createElement("div");
 
+    const contentDiv = document.getElementById("content");
+
+    const homepageDiv = document.createElement("div");
     contentDiv.appendChild(homepageDiv);
 
     const titleh1 = document.createElement("h1");

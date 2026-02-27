@@ -87,11 +87,11 @@ header {
 
 #content{
     flex: 1;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
-    overflow-y: auto;
+    align-items: center; 
 }
 
 
@@ -106,9 +106,9 @@ header {
     align-items: center;
     justify-content: flex-start;
     gap: clamp(1rem, 2vw, 2.5rem);
-    width: clamp(600px, 60%, 1200px);
+    width: clamp(300px, 90%, 1200px);
     border-radius: 35px;
-    margin: 60px auto;
+    margin: auto;
     padding: clamp(1rem, 3vw, 3rem);
 }
 
@@ -169,7 +169,6 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    /* 60/40 */
     width: 60%;
     border-radius: 35px;
     margin: 60px 0px;
@@ -223,24 +222,25 @@ header {
 
 /* Contact Page Tab */
 
-#contact{
+#contact{    
     background: var(--content-background);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    /* 60/40 */
-    width: 60%;
-    height: 90%; 
+    justify-content: flex-start;
+    gap: clamp(1rem, 2vw, 2.5rem);
+    width: clamp(300px, 90%, 1200px);
     border-radius: 35px;
-    margin: 60px 0px;
+    margin: auto;
+    padding: clamp(1rem, 3vw, 3rem);
 }
 
 #contact div{
     background: var(--dark-yellow-theme);
     border: 12px var(--brown-theme) solid;
-    width: 60%;
-    padding: 20px;
+    width: 100%;
+    max-width: 750px;
+    padding: clamp(1rem, 2vw, 2rem);
 }
 
 #contact h1{
@@ -272,4 +272,8 @@ footer{
     background: var(--dark-yellow-theme);
     text-align: center;
     padding: 10px;
+}
+
+footer i{
+    padding-right: 5px;
 }

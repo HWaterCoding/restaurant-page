@@ -1,6 +1,8 @@
 //This file will contain the about-section page load function
 export function contactLoad(){
+
     const contentDiv = document.getElementById("content");
+
     const contactDiv = document.createElement("div");
     contentDiv.appendChild(contactDiv);
 
@@ -74,7 +76,4 @@ export function contactLoad(){
 
     //Apply ID's for all styling of DOM created contact elements
     contactDiv.id = "contact";
-    firstContact.id = "firstContact";
-    secondContact.id = "secondContact";
-    thirdContact.id = "thirdContact";
 }
