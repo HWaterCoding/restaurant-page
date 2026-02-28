@@ -28,11 +28,3 @@ contactBtn.addEventListener("click", () =>{
     contentDiv.innerHTML = "";
     contactLoad();
 });
-
-
-
-
-//to-do:
-//Fixes:
-//Import fonts and add them to the text on the pages.
-//Make the menu, specifically the content div responsive

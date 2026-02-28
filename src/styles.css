@@ -92,6 +92,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; 
+    /* padding: 60px; */
 }
 
 
@@ -168,11 +169,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    width: 60%;
+    gap: clamp(1rem, 2vw, 2.5rem);
+    width: clamp(300px, 90%, 1200px);
+    padding: clamp(1rem, 3vw, 3rem);
     border-radius: 35px;
-    margin: 60px 0px;
-    padding: 30px 0px;
+    margin: 60px auto;
 }
 
 #menu h1{
@@ -181,14 +182,14 @@ header {
     background: var(--dark-yellow-theme);
     border-radius: 50px;
     padding: 10px 30px;
-    margin-top: 10px;
 }
 
 .menuItems{
-    padding: 20px;
-    width: 60%;
     background: var(--dark-yellow-theme);
     border: 12px var(--brown-theme) solid;
+    width: 100%;
+    max-width: 750px;
+    padding: clamp(1rem, 2vw, 2rem);
 }
 
 #menu h2{
@@ -208,7 +209,7 @@ header {
 
 .itemPicture{
     border: 5px var(--brown-theme) solid;
-    height: 200px;
+    width: 200px;
     aspect-ratio: 1/1;
 }
 
@@ -230,9 +231,9 @@ header {
     justify-content: flex-start;
     gap: clamp(1rem, 2vw, 2.5rem);
     width: clamp(300px, 90%, 1200px);
-    border-radius: 35px;
-    margin: auto;
     padding: clamp(1rem, 3vw, 3rem);
+    margin: auto;
+    border-radius: 35px;
 }
 
 #contact div{
